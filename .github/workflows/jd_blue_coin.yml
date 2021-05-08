@@ -6,7 +6,7 @@ name: 小超换豆jd_blueCoin(1K-20)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 14 * * *'
+    - cron: '30 15 * * *'
   watch:
     types: started
   repository_dispatch:
