@@ -6,7 +6,7 @@ name: 「京东」家庭号
 on:
   workflow_dispatch:
   schedule:
-    - cron: '6 0-23/6 * * *'
+    - cron: '6 0-23/5 * * *'
   repository_dispatch:
     types: jd_family
 jobs:
