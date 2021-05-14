@@ -6,7 +6,7 @@ name: 「京东」东东超市
 on:
   workflow_dispatch:
   schedule:
-    - cron: '9 */2 * * *'
+    - cron: '9 */3 * * *'
   repository_dispatch:
     types: jd_superMarket
 jobs:
