@@ -1,14 +1,14 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 「京东」家庭号
+name: 「活动」母婴跳一跳
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '6 0-23/6 * * *'
+    - cron: '5 0-23/6 * * *'
   repository_dispatch:
-    types: jd_family
+    types: z_mother_jump
 jobs:
   build:
 
@@ -31,9 +31,9 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 「京东」家庭号'
+      - name: '运行 「活动」母婴跳一跳'
         run: |
-          node jd_family.js
+          node z_mother_jump.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}

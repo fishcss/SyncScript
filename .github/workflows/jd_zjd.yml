@@ -6,7 +6,7 @@ name: 「京东」步数换豆
 on:
   workflow_dispatch:
   schedule:
-    - cron: '1 12 * * *'
+    - cron: '1 13 * * *'
   repository_dispatch:
     types: jd_zjd
 jobs:
