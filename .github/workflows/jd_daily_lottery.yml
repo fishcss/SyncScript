@@ -6,7 +6,7 @@ name: 「京东」每日抽奖
 on:
   workflow_dispatch:
   schedule:
-    - cron: '13 0-23/7 * * *'
+    - cron: '13 20 * * *'
   repository_dispatch:
     types: jd_daily_lottery
 jobs:
