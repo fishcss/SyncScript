@@ -6,7 +6,7 @@ name: 「京东」抽奖机
 on:
   workflow_dispatch:
   schedule:
-    - cron: '5 16,4 * * *'
+    - cron: '5 16 * * *'
   repository_dispatch:
     types: jd_lotteryMachine
 jobs:
