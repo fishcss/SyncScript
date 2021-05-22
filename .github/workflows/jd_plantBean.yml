@@ -6,7 +6,7 @@ name: 「京东」种豆得豆
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 23,0-15/2 * * *'
+    - cron: '0 23,0-15/3 * * *'
   repository_dispatch:
     types: jd_plantBean
 jobs:
