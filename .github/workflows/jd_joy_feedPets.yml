@@ -6,7 +6,7 @@ name: 「京东」宠汪汪-喂食
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 */2 * * *'
+    - cron: '30 */3 * * *'
   repository_dispatch:
     types: jd_joy_feedPets
 jobs:
