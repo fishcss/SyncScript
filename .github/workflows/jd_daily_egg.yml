@@ -6,7 +6,7 @@ name: 「京东」天天提鹅
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 */5 * * *'
+    - cron: '1 0-15/4 * * *'
   repository_dispatch:
     types: jd_daily_egg
 jobs:
