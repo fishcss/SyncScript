@@ -34,23 +34,11 @@ jobs:
       - name: '运行 「0点」京东签到'
         run: |
           node jd_bean_sign.js
-       - name: '运行 「0点」店铺签到 '
- 
           node monk_inter_shop_sign.js
-      - name: '运行 「0点」进店领豆'
-
           node jd_shop.js
-      - name: '运行 「0点」闪购盲盒'
-
           node jd_sgmh.js
-      - name: '运行 「京东」排行榜'
-
           node jd_rankingList.js
-      - name: '运行 「京东」赚京豆new'
-
           node jd_syj.js
-      - name: '运行 「京豆」额外奖励'
-
           node jd_bean_home.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
